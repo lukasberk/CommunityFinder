@@ -1,0 +1,45 @@
+Current Issues Known
+===============================================
+infoBubble
+	non-showing tabs html elemnts cant be referenced
+	
+	e.g. Comments not showing when clicking an item
+		google.maps.Marker.prototype.loadComments = function() { // v3
+			$("#listing_comments_results").append....
+				but
+			$("#listing_comments_results").size() === 0
+
+cannot add a location
+	not showing edit window
+	
+cluster clicked
+	marker can be hidden under top panel
+	
+markers
+	no fancy tool-tip
+
+	
+In-progress
+===============================================
+Migrating v2 to v3
+	functions tested
+		drag map and refresh results,clusters & markers
+		click cluster to reveal hidden markers
+		click marker to show info window
+		adding comments
+		
+
+Documentation
+===============================================
+Google Maps API
+	v3
+		https://developers.google.com/maps/documentation/javascript/reference
+	v2
+		https://developers.google.com/maps/documentation/javascript/v2/reference
+	
+Info Bubble
+	http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/examples/example.html
+	http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble.js
+Marker Cluster
+	http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/docs/examples.html
+	http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js
